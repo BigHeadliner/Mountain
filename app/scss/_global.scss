@@ -1,0 +1,17 @@
+body{  
+    min-height:100vh; 
+    @extend %lato-300;
+    font-weight: 300;   
+    font-style:normal;
+    font-size: 16px; 
+    line-height: 24px;  
+    color: #000;
+  } 
+  
+
+    
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}    

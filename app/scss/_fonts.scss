@@ -1,0 +1,40 @@
+ 
+@font-face {
+    font-family: 'Bebas-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Bebas-Regular'),
+        url('../fonts/Bebas-Regular.woff2') format('font-woff2'),
+        url('../fonts/Bebas-Regular.woff') format('font-woff'); 
+     font-display: swap;    
+} 
+ 
+@font-face {
+    font-family: 'Lato-BlackItalic';
+    font-weight: 900;
+    font-style: normal;
+    src: local('Lato-BlackItalic'),
+        url('../fonts/Lato-BlackItalic.woff2') format('font-woff2'),
+        url('../fonts/Lato-BlackItalic.woff') format('font-woff'); 
+     font-display: swap;    
+}  
+ 
+@font-face {
+    font-family: 'Lato-Light';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Lato-Light'),
+        url('../fonts/Lato-Light.woff2') format('font-woff2'),
+        url('../fonts/Lato-Light.woff') format('font-woff'); 
+     font-display: swap;    
+}  
+ 
+@font-face {
+    font-family: 'Oswald-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Oswald-Bold'),
+        url('../fonts/Oswald-Bold.woff2') format('font-woff2'),
+        url('../fonts/Oswald-Bold.woff') format('font-woff'); 
+     font-display: swap;    
+} 
