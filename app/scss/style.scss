@@ -10,11 +10,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;   
-    height: 100vh;
+     //height: 100vh;
 
-   &__top, 
-   &__bottom{ 
-    padding: 30px 0; 
+   &__top{ 
+    padding: 8px 0; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -40,25 +39,10 @@
       color: #414f6b;
     } 
      
-    &__bottom{  
-        margin-bottom: 0;
-    } 
-     
-    .menu{
+   
+ }   
+  
 
-    &__item:hover{ 
-        border-bottom: 1px solid #414f6b; 
-    }  
-       
-     &__link{ 
-        color:#414f6b; 
-        font-size: 12px;  
-        text-transform: uppercase;    
-        font-weight: 900;
-       
-     } 
-    }
- }  
 
  
 .menu{ 
@@ -90,9 +74,120 @@
    
  } 
 
-}
+}  
+ 
+.header-bottom{  
+  border: 1px solid transparent; 
+  background-color: #fff;  
 
+  &__inner{ 
+    padding: 15px 0; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  }  
+
+  .menu{
+
+    &__item:hover{ 
+        border-bottom: 1px solid #414f6b; 
+    }  
+       
+     &__link{ 
+        color:#414f6b; 
+        font-size: 12px;  
+        text-transform: uppercase;    
+        font-weight: 900;
+       
+     } 
+    }
+}
+ 
+.history{ 
+  padding-top: 57px;  
+  background-image: url('../images/history-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__title-box{ 
+    position: relative;  
+    padding-top: 39px;    
+    margin-bottom: 47px;
+  }  
+
+  &__title{ 
+    font-size: 136px; 
+    @extend %oswald-700; 
+    color: rgba(65, 79, 107, 0.502); 
+    text-transform: uppercase;
+  } 
    
+  &__subtitle{ 
+    font-size: 32px; 
+    @extend %oswald-700;  
+    color: rgb(65, 79, 107); 
+    position: absolute; 
+    top: 47px;
+    left: 158px;
+  } 
+   
+  &__content{ 
+    @extend %lato-300; 
+    font-size: 16px; 
+    line-height: 24px; 
+    color:#000;  
+    max-width: 819px; 
+    margin-left: 67px; 
+    margin-bottom: 565px;
+  }
+
+} 
+
+.history-photo{ 
+  background-image: url('../images/history-photo-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+  &__inner{ 
+    padding: 25px 0 35px;
+  } 
+   
+  &__item{ 
+    margin: 0 5px; 
+    display: block;
+  } 
+   
+  .slick-dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -30px;
+  }
+  
+  .slick-dots li+li {
+    margin-left: 10px; 
+  }
+  
+  .slick-dots .slick-active button {
+    background: #fff; 
+    opacity: 1;
+  }
+  
+  .slick-dots button {
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255); 
+    opacity: 0.2;
+    font-size: 0;
+    border-radius: 50%;
+    border: none; 
+    cursor: pointer;
+  }
+}
+ 
+  
 
 @import 'media';  
+
 
