@@ -315,9 +315,27 @@
 
 .tabs-content1.tabs-content--active{ 
   display:block;
-}  
+}   
+ 
+.footer{ 
+  background:#414f6b; 
+  &__inner{ 
+    padding: 17px 0 15px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+  } 
+  &__text{  
+    font-size: 12px; 
+    @extend %lato-900; 
+    color: rgb(99, 118, 157); 
+    text-transform: uppercase; 
+    font-weight: 900;
+  }
+}
 
 @import 'media';  
+
 
 
 
