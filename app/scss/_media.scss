@@ -1,185 +1,106 @@
-   
-     @media(max-width:1140px) {    
-         
-          /* -- map -- */   
+@media(max-width:900px) {
 
-        .contact__map{  
-           margin: 0 auto 50px; 
-           border: 1px solid transparent; 
-           display: flex;  
-           justify-content: center; 
-           align-items: center;
-        }
-         
-     }  
-      
-     @media(max-width: 800px) {     
+    .header__top {
+        position: relative;
+    }
+} 
+ 
+@media(max-width:800px) { 
 
-         /* -- map -- */    
+    .header__main-title{ 
+        font-size: 87px;
+        line-height: 114px;
+     }
+} 
+ 
+ 
+@media(max-width:630px) { 
 
-         iframe{     
-             height: 425px; 
-         }  
-
-         /* -- contact -- */    
-
-        .contact__address {  
-
-            margin-bottom: 77px;
-        }
-
+    .header__main-title{ 
+        font-size: 77px;
+        line-height: 95px;
      } 
-
-
-    @media(max-width:703px) {   
+}
  
-       /* -- slider -- */  
+ 
+@media(max-width:550px) { 
+ 
+     .header__main-title{ 
+        font-size: 63px;
+        line-height: 79px;
+     }
+} 
+ 
 
-        .slick-dots{ 
+
+@media(max-width:500px) { 
+
+    .menu {
+
+        .menu__btn {
+            display: block;
+        }
+
+        .menu__list {
+            border: 1px solid transparent;
+            background: #E5E5E5;
+            display: block;
+            text-align: center;
+            position: absolute;
+            top: -375px;
+            left: 0;
+            right: 0;
+            transition: all 0.5s;
+
+
+            .menu__item+.menu__item {
+                margin-left: 0px;
+                padding: 15px 0 30px;
+            }
+
+            .menu__item {
+                padding: 30px 0 15px;
+                font-size: 15px; 
+                border-bottom: 1px solid transparent; 
+            }
+
+        }
+
+        .menu__list.menu__list--active {
+            top: 79px;
+        }
+
+    } 
      
-            bottom: 50px;
-        } 
-         
-        .slick-dots button { 
-            margin: 0 7px;
+    .header__main-title {
+        font-size: 53px;
+        line-height: 63px;
+    }
+
+}   
+ 
+ 
+@media(max-width:450px) {
+
+    .header-bottom__inner {
+        .header-bottom__logo {
+            display: none;
+        }
+
+        .menu {
+            width: 100%;
+
+            .menu__list-hb {
+                justify-content: space-around;
+            }
         }
     }
-   
 
-  @media(max-width:630px) { 
-     
-    /* -- header-- */ 
-     
-     
-    .header__logo { 
-        font-size: 17px; 
-    }  
-     
-    .header__user-link{ 
-       font-size: 15px;   
-    }   
-     
-       /* -- map -- */    
-         
-       iframe{     
-        height: 350px; 
-    } 
-     
-   
- } 
-  
-  
- @media(max-width: 550px) { 
-     
-    /* -- header-- */   
-     
-    .header__logo { 
-       margin-left: 10px;
-    }  
-     
-    .header__user-link { 
-        padding: 0 7px;
-    }   
-     
-     /* -- popup-  */     
-
-    .popup__body { 
-         
-        max-width: 430px;
-    } 
-
-       
-      /* -- contact-- */ 
-
-    .contact__title::before {  
-
-      display: none;
-    } 
-     
-    .contact__bottom{ 
-        flex-wrap: wrap;
-    } 
-     
-    .contact__address{ 
-        text-align: center; 
-        max-width: 100%;
-    } 
-     
-    .contact__work-time{ 
-        text-align: center;  
-        max-width: 100%;
-    }
-
- } 
-  
- @media(max-width: 500px) { 
-     
-    /* -- header-- */   
-     
-    .header__logo { 
-       margin-left: 15px; 
-       font-size: 15px;
-    }  
-     
-    .header__user-link { 
-        padding: 0 9px; 
-        font-size: 0;
-    }  
-      
-       /* -- main -- */    
-
-    .main__title{ 
-        font-size: 50px;
-    } 
-     
-     /* -- popup-  */     
-
-     .popup__body { 
-         
-        max-width: 360px;
-    } 
-      
-      /* -- slider -- */      
-
-    .slick-dots {
-        bottom: 37px;
-    } 
-     
-       /* -- map -- */    
-         
-       iframe{     
-        height: 300px; 
-    } 
-
- }   
-
-  
- @media(max-width: 370px) {  
-     /* -- main -- */  
-    .main__title { 
-        font-size: 43px;
-    } 
-     
-     /* -- popup-  */     
-
-     .popup__body {      
-
-        max-width: 304px; 
-    } 
-     
-     /* -- slider  --*/     
-
-    .slick-dots {
-        bottom: 25px;
-    }
-      
-     /* -- map -- */    
-         
-     iframe{     
-        height: 250px; 
-    } 
-
- } 
-
-  
+}
  
+@media(max-width:395px) {  
+    .header__main-title {
+        font-size: 43px;
+        line-height: 54px;
+    }
+} 
