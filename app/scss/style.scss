@@ -185,9 +185,139 @@
     cursor: pointer;
   }
 }
- 
   
+.climb{  
+ background: #fff;
+&__top{ 
+  padding: 32px 0 28px;   
+  display: flex; 
+} 
+ 
+&__title-box{ 
+  position: relative;  
+  padding-top: 39px;    
+  margin-bottom: 47px;
+}  
+
+&__title{ 
+  font-size: 136px; 
+  @extend %oswald-700; 
+  color: rgba(65, 79, 107, 0.502); 
+  text-transform: uppercase;
+} 
+ 
+&__subtitle{ 
+  font-size: 32px; 
+  @extend %oswald-700;  
+  color: rgb(65, 79, 107); 
+  position: absolute; 
+  top: 47px;
+  left: 158px;
+}  
+ 
+&__content{ 
+  max-width: 595px; 
+  margin-left: 100px;
+  margin-top: 15px;
+
+  }
+} 
+ 
+.climb-tabs{ 
+  background-color: #414f6b; 
+  &__nav{  
+    display: flex;
+  } 
+   &__item{ 
+    padding: 5px 7px;
+   } 
+  &__link{ 
+     color:#b0b4be;  
+     @extend %oswald-700; 
+     font-weight: 20px; 
+     padding-bottom: 5px; 
+     padding: 10px 23px;
+  } 
+   
+  &__link--active{  
+    background: #b0b4be; 
+    color: #414f6b; 
+    text-decoration: underline;
+  } 
+}  
+ 
+.tabs-content { 
+ 
+  background-image: url('../images/tabs-content1-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;      
+  display:none;
+  
+ 
+
+  &__inner{ 
+    padding-top: 100px;
+  }
+   
+  &__message-box{ 
+    width: 350px;  
+    height: 230px;  
+    padding: 20px 35px 25px;  
+    margin-bottom: 217px; 
+    margin-left: 33px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.7;   
+  } 
+
+  &__title{ 
+    font-size: 32px; 
+    color: #414f6b; 
+    @extend %oswald-700; 
+    opacity: 1;  
+    margin-bottom: 19px;
+  } 
+
+  &__schedule{ 
+    display: flex; 
+    width: 100%;
+  }   
+
+  &__schedule-events{ 
+    margin-left: 55px;
+  } 
+   
+  &__schedule-date, 
+  &__schedule-event{ 
+    margin-bottom: 10px;
+  }  
+
+  &__schedule-date-bm, 
+  &__schedule-event-bm{ 
+    margin-bottom: 25px;
+  }
+} 
+ 
+
+.tabs-content1{ 
+    background-image: url('../images/tabs-content2-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;      
+    display:none;
+  
+}
+
+ 
+.tabs-content.tabs-content--active{ 
+  display:block;
+}   
+
+.tabs-content1.tabs-content--active{ 
+  display:block;
+}  
 
 @import 'media';  
+
 
 

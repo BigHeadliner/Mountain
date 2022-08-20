@@ -41,7 +41,18 @@
 
 
 
-// }); 
+// });   
+ 
+ 
+$('.climb-tabs__link').on('click', function(e){ 
+    e.preventDefault(); 
+    $('.climb-tabs__link').removeClass('climb-tabs__link--active');   
+    $(this).addClass('climb-tabs__link--active'); 
+     
+    $('.tabs-content,.tabs-content1').removeClass('tabs-content--active');  
+    $($(this).attr('href')).addClass('tabs-content--active');  
+    console.log('click works !')
+  });  
  
 $('.history-photo__slider').slick({
     slidesToShow: 4,
