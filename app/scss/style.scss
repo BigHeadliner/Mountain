@@ -339,9 +339,8 @@
   background-image: url('../images/tabs-content1-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;      
-  display:none;
-  
+  background-position: center;       
+  display: none;
  
 
   &__inner{ 
@@ -349,7 +348,7 @@
   }
    
   &__message-box{ 
-    width: 350px;  
+    max-width: 350px;  
     height: 230px;  
     padding: 20px 35px 25px;  
     margin-bottom: 217px; 
@@ -384,15 +383,22 @@
   &__schedule-event-bm{ 
     margin-bottom: 25px;
   }
-} 
+}  
  
+ .display-block{ 
+  display: block;
+ }
+  
+ .close-link{ 
+  display: none;
+ }
 
 .tabs-content1{ 
     background-image: url('../images/tabs-content2-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;      
-    display:none;
+    display: none;
   
 }
 

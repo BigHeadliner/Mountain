@@ -24,8 +24,8 @@ $('.climb-tabs__link').on('click', function(e){
     $(this).addClass('climb-tabs__link--active'); 
      
     $('.tabs-content,.tabs-content1').removeClass('tabs-content--active');  
-    $($(this).attr('href')).addClass('tabs-content--active');  
-    console.log('click works !')
+    $('.tabs-content').removeClass(' display-block');   
+    $($(this).attr('href')).addClass('tabs-content--active'); 
   });  
  
 $('.history-photo__slider').slick({ 
