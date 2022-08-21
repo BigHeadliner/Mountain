@@ -58,7 +58,20 @@
         margin-bottom: 250px; 
         margin-left: 0;
     } 
-      
+       
+    .climb__top{ 
+        flex-wrap: wrap;
+    }  
+
+    .climb__title-box{ 
+        margin: 10px auto 64px;
+    } 
+     
+    .climb__content { 
+        width: 100%; 
+        margin-left: 15px;
+    } 
+
 
 }
  
@@ -154,6 +167,14 @@
    
     .history__content {
         margin-bottom: 130px; 
+    } 
+     
+    .climb__content{ 
+        margin-left: 5px;
+    } 
+     
+    .climb__subtitle{ 
+        font-size: 27px;
     }
      
 
