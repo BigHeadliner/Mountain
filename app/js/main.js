@@ -28,9 +28,44 @@ $('.climb-tabs__link').on('click', function(e){
     console.log('click works !')
   });  
  
-$('.history-photo__slider').slick({
+$('.history-photo__slider').slick({ 
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/slider/arrow-left.svg"/></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/slider/arrow-right.svg"/></button>',
+    dots: true,
     slidesToShow: 4,
     slidesToScroll: 4,
     arrows: false,
-    dots: true,
+    dots: true, 
+     
+    responsive: [
+      {
+        breakpoint: 943,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+
+        }  
+      }, 
+       
+      {
+        breakpoint: 715,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,  
+          arrows: true,
+
+        }  
+      }, 
+       
+      {
+        breakpoint: 470,
+        settings: { 
+          slidesToShow: 1,
+          slidesToScroll: 1,  
+          arrows: false,
+
+        }  
+      },
+
+     ]
 })

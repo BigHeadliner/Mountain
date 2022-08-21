@@ -1,4 +1,13 @@
-@media(max-width:900px) {
+  
+   @media(max-width:935px) { 
+     .history-photo__img{ 
+        margin: 0 auto;  
+     }
+   }
+    
+     
+
+ @media(max-width:900px) {
 
     .header__top {
         position: relative; 
@@ -17,6 +26,14 @@
 
     .history__content{ 
         margin-bottom: 350px;
+    } 
+     
+    .history-photo .slick-dots {
+        bottom: -35px;
+    }
+   
+    .history-photo .slick-dots li + li {
+        margin-left: 15px;
     }
 
 } 
@@ -157,6 +174,10 @@
      
     .history__content {
         margin-bottom: 70px;
+    } 
+     
+    .history-photo .slick-dots li + li {
+        margin-left: 10px;
     }
 
 } 
