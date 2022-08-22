@@ -112,6 +112,25 @@
   
  .climb-tabs__link {
     padding: 7px 0;
+} 
+ 
+.footer__inner{  
+   display: block; 
+  
+} 
+ 
+.footer__logo{ 
+    margin: 15px; 
+    text-align: center;
+}  
+ 
+.footer__img{ 
+    margin: 0 auto;
+}
+ 
+.footer__content{ 
+    margin: 15px; 
+    text-align: center;
 }
       
 } 
@@ -205,7 +224,8 @@
     }
       
     .climb-tabs__nav{ 
-      display:block
+      display:block; 
+      height: fit-content;
     } 
      
     .climb-tabs__item {

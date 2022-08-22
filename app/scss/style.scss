@@ -36,7 +36,7 @@
     }
      
     &__main-title--bottom{  
-      color: #414f6b;
+      color: #414f6b; 
     } 
      
    
@@ -173,7 +173,7 @@
   &__title-box{ 
     position: relative;  
     padding-top: 39px;    
-    margin-bottom: 47px;
+    margin-bottom: 50px;
   }  
 
   &__title{ 
@@ -314,7 +314,9 @@
 .climb-tabs{ 
   background-color: #414f6b; 
   &__nav{  
-    display: flex;
+    display: flex; 
+    align-items: center;  
+    height:43px;
   } 
    &__item{ 
     padding: 5px 7px;
@@ -412,7 +414,8 @@
 }   
  
 .footer{ 
-  background:#414f6b; 
+  background:#414f6b;  
+  text-align: center;
   &__inner{ 
     padding: 17px 0 15px; 
     display: flex; 
